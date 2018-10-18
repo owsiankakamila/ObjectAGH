@@ -27,7 +27,7 @@ public class SparseDataFrame extends DataFrame {
         for(int i =0; i< howManyCols;i++) { //each column
             cols.add(new SparseColumn(df.names[i], df.types[i], hide)); //create column
             for (int j = 0; j < howManyRows; j++){ // each row
-                cols.get(i).addElement(df.cols.get(i).returnElement(j)); //add Element
+                cols.get(i).addElement(df.cols.get(i).returnElement(j+1)); //add Element
             }
         }
 
