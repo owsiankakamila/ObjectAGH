@@ -1,6 +1,7 @@
-package pkg2;
+package pkg1;
 
 import java.lang.*;
+import java.lang.NumberFormatException;
 
 public class IntValue extends Value {
     int val;
@@ -14,11 +15,11 @@ public class IntValue extends Value {
     }
 
     public String toString(){
-        return Integer.toString(val);
+        return Integer.toString(val); // how it is stored in memory? reference??? how
 
     }
 
-    public Value add(Value x){
+    public IntValue add(Value x){
         if( x instanceof IntValue) {
             // returnVal method??????
             int addIt =Integer.parseInt(x.toString()); // stupid and long but at least can work.. ?
@@ -87,51 +88,51 @@ public class IntValue extends Value {
             // throw Exception
         }
     }
-/*
-    public boolean eq(Value x) {
-        if (x.val instanceof Integer) {
-            if (val == (int) x.val) { // this probably will not work
-                return true;
-            }
+
+    public boolean eq(Value x) { //place in memory
+        return (this==x);
+
+    }
+
+    public boolean neq(Value x){
+        int x_val;
+        try{
+            x_val = Integer.parseInt(x.toString());
+        }
+        catch(NumberFormatException e){
+            return false;
 
         }
-        return false;
+        return (this.val!=x_val);
     }
 
     public  boolean lte(Value x){
-        if (x.val instanceof Integer) {
-            if(val <= (int)x.val){ // this probably will not work
-                return true;
-            }
+        int x_val;
+        try{
+            x_val = Integer.parseInt(x.toString());
         }
-        return false;
+        catch(NumberFormatException e){
+            return false;
+
+        }
+        return (this.val<=x_val);
 
     }
     public  boolean gte(Value x){
-        if (x.val instanceof Integer) {
-            if(val >= (int)x.val){ // this probably will not work
-                return true;
-            }
+        int x_val;
+        try{
+            x_val = Integer.parseInt(x.toString());
         }
-        return false;
-    }
-    public  boolean neq(Value x){
-        if (x.val instanceof Integer) {
-            if(val != (int)x.val){ // this probably will not work
-                return true;
-            }
-        }
-        return false;
-    }
-    public boolean equals(Object other){
-        if (this==other){
-            return true;
-        }
-        else{
+        catch(NumberFormatException e){
             return false;
+
         }
+        return (this.val>=x_val);
     }
-    */
+    public boolean equals(Object other){ // only value
+        return other.toString().equals(this.toString());
+    }
+
     public int hashCode(){ //something different connectd to equals?????
         return val;
     }

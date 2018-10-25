@@ -1,13 +1,24 @@
 package pkg1;
 
+
 import java.io.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String file ="C:\\Users\\earzl\\Desktop\\Obiektowe\\ObjectAGH\\lab1DataFrame\\src\\pkg1\\data.csv";
+       /* String file ="C:\\Users\\earzl\\Desktop\\Obiektowe\\ObjectAGH\\lab1DataFrame\\src\\pkg1\\data.csv";
         DataFrame df = new DataFrame(file, new String[]{"int","int","int"}, true);
         df.Print();
+*/
+
+       // test of Value:
+
+        IntValue x= new IntValue(5);
+        IntValue y = new IntValue(20);
+        System.out.println (x.toString() + "  "+ y.toString());
+
+        System.out.println (x.lte(y));
+        System.out.println (x.gte(y));
 
 
 

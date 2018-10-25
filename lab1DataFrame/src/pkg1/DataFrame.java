@@ -36,6 +36,7 @@ public class DataFrame {
         }
     }
 
+
     DataFrame(Column columns []){
         howManyCols = columns.length;
         howManyRows = columns[0].size;
