@@ -25,23 +25,23 @@ public class StringValue extends Value {
     }
 
     public Value sub(Value x){
-
+        return create("not implemented");
 
 
     }
     public Value mul(Value x){
-
+        return create("not implemented");
 
     }
 
 
     public Value div(Value x){
-
+        return create("not implemented");
 
 
     }
     public Value pow(Value x){
-
+        return create("not implemented");
     }
 
     public boolean eq(Value x) { //place in memory
@@ -70,7 +70,7 @@ public class StringValue extends Value {
             return false;
 
         }
-        return (val<x_val);
+        return /*(val<x_val)*/ false;
 
     }
     public  boolean gte(Value x){
@@ -82,7 +82,7 @@ public class StringValue extends Value {
             return false;
 
         }
-        return (this.val>=x_val);
+        return /*(this.val>=x_val)*/ false;
     }
     public boolean equals(Object other){ // only value
         return other.toString().equals(this.toString());
@@ -91,7 +91,7 @@ public class StringValue extends Value {
     public int hashCode(){ //something different connectd to equals?????
         return Integer.parseInt(val);
     }
-    public Value create(String s){
+    public StringValue create(String s){
 
         return new StringValue(s);
 

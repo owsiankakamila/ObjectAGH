@@ -91,12 +91,13 @@ public class DataFrame {
 
             //TAKE FIRST LINE AND CHECK IF HEADER
 
-            if (!header){
+            if (!header){/// <---- if there is header
                 // WRITE ME NAMES OF COLUMNS
 
                 Scanner sc = new Scanner(System.in);
                 System.out.print("Write names of columns: ");
                 colNames = sc.nextLine();
+
                 // FORMAT colNames to String []
                 names = colNames.split(",");
 
@@ -104,8 +105,9 @@ public class DataFrame {
 
 
             }
-            else{
+            else{ /// <--- if there isnt header
                 if((colNames = br.readLine()) != null){
+                    // JUST TAKE THE NAME OF COLUMNS
 
                     // FORMAT colNames to String []
                     names = colNames.split(",");
@@ -114,6 +116,8 @@ public class DataFrame {
 
 
             }
+
+            // ADD NAMES TO THE COLUMN
             for (int i = 0; i < howManyCols; i++) {
                 cols.add(new Column(names[i], typesArray[i]));
             }
@@ -122,17 +126,22 @@ public class DataFrame {
 
 
             while ((strLine = br.readLine()) != null)   {
-                // Take this line and FORMAT
-                // CHANGE IT TO Object [] - here default String(?) or Int
+                // /\ TAKE EACH LINE
+
+                // SEPARATE EACH ELEMENT IN ROW
                 String [] objects = strLine.split(",");
+                Value [] values = new Value [objects.length];
 
-                /*for ( String o : objects){
-                    System.out.print("\n" + o.toString());
-                }*/
+                // EACH STRING CHANGE TO VALUE TYPE
+                for (int i =0; i<objects.length;i++){
+                    values[i] = values[i].create(objects[i]); //i would like to use static method but
+                                                            // i do not know how to make it work with abstract class
+                    //SHOULD I USE GET INSTANCE??
+                }
 
 
 
-                addRow(objects);
+                addRow(values);
                 //System.out.println(System.out.print(cols.get(0).returnElement(0)));
 
 
@@ -226,7 +235,7 @@ public class DataFrame {
         System.out.println();
     }
 
-    boolean addRow(Object objects []){
+    boolean addRow(Value objects []){
         //System.out.print(howManyRows + " ");
         if (objects.length != howManyCols){
             //System.out.println(howManyCols + " "+ objects.length);
@@ -254,7 +263,7 @@ public class DataFrame {
     }
 
     void copyRowToNew(DataFrame df, int row){
-        Object[] objectsOfSelected = new Object[howManyCols];
+        Value[] objectsOfSelected = new Value[howManyCols];
         int x=0;
 
         for (Column column: cols){

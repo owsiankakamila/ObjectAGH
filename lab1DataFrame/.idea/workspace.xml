@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e7ee78d-db22-464e-ab57-f3c00351d26d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pkg1/DataTimeValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pkg1/DoubleValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pkg1/FloatValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pkg1/StringValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1DataFrame/pkg1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1DataFrame/pkg1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/COOValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/COOValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/Column.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pkg1/DataFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/DataFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg2/DoubleValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg2/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/IntValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pkg2/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/Value.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/DoubleValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/DoubleValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/FloatValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/FloatValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/IntValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/SparseColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/SparseColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/SparseDataFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/SparseDataFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/StringValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/StringValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pkg1/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pkg1/Value.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,24 +35,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="5" />
-          <entry key="java" value="22" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="27" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="7" />
-          <entry key="java" value="3913" />
+          <entry key="java" value="5414" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3913" />
+          <entry key="JAVA" value="5414" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -65,9 +63,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/Column.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="946">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
+                <element signature="e#179#186#0" expanded="true" />
                 <element signature="e#223#224#0" expanded="true" />
                 <element signature="e#280#281#0" expanded="true" />
               </folding>
@@ -78,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/SparseDataFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+            <state relative-caret-position="-88">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -87,19 +86,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/SparseColumn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkg1/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="638">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#155#165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,22 +98,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/DoubleValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+            <state relative-caret-position="95">
+              <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/FloatValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1701">
-              <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+            <state relative-caret-position="243">
+              <caret line="79" column="28" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="28" />
               <folding>
-                <element signature="e#2969#2970#0" expanded="true" />
-                <element signature="e#3046#3047#0" expanded="true" />
-                <element signature="e#3074#3075#0" expanded="true" />
-                <element signature="e#3151#3152#0" expanded="true" />
+                <element signature="e#2973#2974#0" expanded="true" />
+                <element signature="e#3050#3051#0" expanded="true" />
+                <element signature="e#3078#3079#0" expanded="true" />
+                <element signature="e#3155#3156#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,17 +122,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/StringValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pkg1/DataTimeValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="-1071">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1833#1834#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pkg1/DataFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="344">
+              <caret line="131" column="55" lean-forward="true" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5714#5715#0" expanded="true" />
@@ -162,10 +151,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg1/Value.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pkg1/COOValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="1166">
+              <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+              <folding>
+                <element signature="e#308#309#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#1685#1686#0" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pkg1/IntValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-572">
+              <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,6 +218,12 @@
       <find>Int</find>
       <find>Double</find>
       <find>Float</find>
+      <find>Object</find>
+      <find>addRow</find>
+      <find>;</find>
+      <find>Value</find>
+      <find>i</find>
+      <find>spli</find>
     </findStrings>
     <replaceStrings>
       <replace>double</replace>
@@ -199,6 +231,9 @@
       <replace>Float</replace>
       <replace>string</replace>
       <replace>String</replace>
+      <replace>static StringValue</replace>
+      <replace>Value</replace>
+      <replace>{ }</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -207,24 +242,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pkg1/Column.java" />
-        <option value="$PROJECT_DIR$/src/pkg1/COOValue.java" />
-        <option value="$PROJECT_DIR$/src/pkg1/SparseColumn.java" />
         <option value="$PROJECT_DIR$/src/pkg1/file.csv" />
-        <option value="$PROJECT_DIR$/src/pkg1/SparseDataFrame.java" />
         <option value="$PROJECT_DIR$/src/pkg2/Value.java" />
         <option value="$PROJECT_DIR$/src/pkg2/DoubleValue.java" />
         <option value="$PROJECT_DIR$/src/pkg2/IntValue.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/pkg1/pkg2/Main.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/Main.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/DataTimeValue.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/Column.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/DoubleValue.java" />
         <option value="$PROJECT_DIR$/src/pkg1/IntValue.java" />
         <option value="$PROJECT_DIR$/src/pkg1/Value.java" />
-        <option value="$PROJECT_DIR$/src/pkg1/Main.java" />
-        <option value="$PROJECT_DIR$/src/pkg1/DoubleValue.java" />
         <option value="$PROJECT_DIR$/src/pkg1/FloatValue.java" />
         <option value="$PROJECT_DIR$/src/pkg1/StringValue.java" />
-        <option value="$PROJECT_DIR$/src/pkg1/DataTimeValue.java" />
         <option value="$PROJECT_DIR$/src/pkg1/DataFrame.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/SparseColumn.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/SparseDataFrame.java" />
+        <option value="$PROJECT_DIR$/src/pkg1/COOValue.java" />
       </list>
     </option>
   </component>
@@ -349,7 +384,7 @@
       <workItem from="1539779950381" duration="13909000" />
       <workItem from="1539948971324" duration="4074000" />
       <workItem from="1540390723028" duration="5150000" />
-      <workItem from="1540465320618" duration="260000" />
+      <workItem from="1540465320618" duration="3729000" />
     </task>
     <servers />
   </component>
@@ -359,7 +394,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24415000" />
+    <option name="totallyTimeSpent" value="27884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -394,7 +429,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23489933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +438,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,48 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/Value.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/IntValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="142" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/Column.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/SparseDataFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/SparseColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -507,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/StringValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg1/DataTimeValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -521,17 +507,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/COOValue.java">
+    <entry file="file://$PROJECT_DIR$/src/pkg1/Column.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="946">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#179#186#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/SparseDataFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/SparseColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#155#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/Value.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/DoubleValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="72" column="39" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/StringValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/FloatValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
+            <element signature="e#3078#3079#0" expanded="true" />
+            <element signature="e#3155#3156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pkg1/IntValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-572">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pkg1/DataFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="344">
+          <caret line="131" column="55" lean-forward="true" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5714#5715#0" expanded="true" />
@@ -540,22 +600,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/DoubleValue.java">
+    <entry file="file://$PROJECT_DIR$/src/pkg1/COOValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pkg1/FloatValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1701">
-          <caret line="136" column="1" lean-forward="true" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+        <state relative-caret-position="1166">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding>
-            <element signature="e#2969#2970#0" expanded="true" />
-            <element signature="e#3046#3047#0" expanded="true" />
-            <element signature="e#3074#3075#0" expanded="true" />
-            <element signature="e#3151#3152#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
           </folding>
         </state>
       </provider>

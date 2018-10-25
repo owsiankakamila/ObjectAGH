@@ -136,7 +136,7 @@ public class IntValue extends Value {
     public int hashCode(){ //something different connectd to equals?????
         return val;
     }
-    public Value create(String s){
+    public IntValue create(String s){
 
         return new IntValue(Integer.parseInt(s));
 

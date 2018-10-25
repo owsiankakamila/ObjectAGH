@@ -129,7 +129,7 @@ public class DoubleValue extends Value{
     public int hashCode(){ //something different connectd to equals?????
         return (int)val;
     }
-    public Value create(String s){
+    public DoubleValue create(String s){
 
         return new DoubleValue(Double.parseDouble(s));
 

@@ -2,7 +2,7 @@ package pkg1;
 
 public abstract class Value {
 
-
+    Value(){}
 
     public abstract String toString();
 
@@ -19,6 +19,6 @@ public abstract class Value {
 
     public abstract boolean equals(Object other);
     public abstract int hashCode();
+    public abstract Value create (String s);
 
-    public abstract Value create(String s);
 }

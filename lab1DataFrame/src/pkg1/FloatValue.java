@@ -73,7 +73,7 @@ public class FloatValue extends Value {
             // returnVal method??????
             float powIt =Float.parseFloat(x.toString()); // stupid and long but at least can work.. ?
 
-            return new FloatValue(Math.pow(val,powIt));
+            return new FloatValue(/*Math.pow(val,powIt)*/);
         }
         else{
             return new FloatValue();
@@ -128,7 +128,7 @@ public class FloatValue extends Value {
     public int hashCode(){ //something different connectd to equals?????
         return (int)val;
     }
-    public Value create(String s){
+    public FloatValue create(String s){
 
         return new FloatValue(Float.parseFloat(s));
 

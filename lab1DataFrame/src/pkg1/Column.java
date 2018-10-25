@@ -5,7 +5,7 @@ public class Column implements Cloneable {
     String name;
     String type;
     int size;
-    ArrayList<Object> elements = new ArrayList<Object>();
+    ArrayList<Value> elements = new ArrayList<Value>();
     //albo object
 
     Column(){
@@ -25,12 +25,12 @@ public class Column implements Cloneable {
     }
 
 
-    void addElement (Object obj){
+    void addElement (Value obj){
         elements.add(obj);
         size++;
     }
 
-    Object returnElement(int index){
+    Value returnElement(int index){
         //if Array elements contains COOValue
         //
         // if index not found it means it is hidden value

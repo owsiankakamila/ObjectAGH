@@ -7,7 +7,7 @@ public class SparseDataFrame extends DataFrame {
     Object hidden;
     ArrayList<SparseColumn> cols = new ArrayList<SparseColumn>();
 
-    public SparseDataFrame(String namesArray [], String typesArray [], Object hide){
+    public SparseDataFrame(String namesArray [], String typesArray [], Value hide){
         super(namesArray,typesArray);
         cols.clear();
         hidden = hide; //rzutowanie
@@ -17,7 +17,7 @@ public class SparseDataFrame extends DataFrame {
         }
     }
 
-    SparseDataFrame(DataFrame df, Object hide){ //why was asking for default constr in DF??)
+    SparseDataFrame(DataFrame df, Value hide){ //why was asking for default constr in DF??)
         hidden = hide;
         howManyCols = df.howManyCols;
         howManyRows = df.howManyRows;

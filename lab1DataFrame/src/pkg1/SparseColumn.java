@@ -4,17 +4,17 @@ package pkg1;
 import java.util.ArrayList;
 
 public class SparseColumn extends Column {
-    Object hidden;
+    Value hidden;
     ArrayList<COOValue> elements = new ArrayList<COOValue>();
 
 
-    SparseColumn (String itsName, String itsType, Object hide){
+    SparseColumn (String itsName, String itsType, Value hide){
         super(itsName,itsType);
         hidden = hide;
 
     }
 
-    Object returnElement(int index){
+    Value returnElement(int index){
         //if Array elements contains COOValue
 
         for (COOValue coo: elements){
@@ -31,7 +31,7 @@ public class SparseColumn extends Column {
     }
 
 
-    void addElement (Object obj){
+    void addElement (Value obj){
         size++;
         int newPosition= elements.size();
 
