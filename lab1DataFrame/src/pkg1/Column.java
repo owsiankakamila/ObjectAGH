@@ -24,6 +24,13 @@ public class Column implements Cloneable {
         //nazwa typu jako typ kolumny
     }
 
+    int [] findSame (){
+        int x;
+        for (x=0, x <elements.size(), x++){
+
+        }
+    }
+
 
     void addElement (Value obj){
         elements.add(obj);

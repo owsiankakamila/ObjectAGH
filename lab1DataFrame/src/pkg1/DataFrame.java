@@ -130,11 +130,15 @@ public class DataFrame {
 
                 // SEPARATE EACH ELEMENT IN ROW
                 String [] objects = strLine.split(",");
-                Value [] values = new Value [objects.length];
+
+                // CHECK WHAT TYPE IT IS???
+                //here I'll do string
+                StringValue [] values = new StringValue [objects.length];
+                StringValue walkAround = new StringValue();
 
                 // EACH STRING CHANGE TO VALUE TYPE
                 for (int i =0; i<objects.length;i++){
-                    values[i] = values[i].create(objects[i]); //i would like to use static method but
+                    values[i] = walkAround.create(objects[i]); //i would like to use static method but
                                                             // i do not know how to make it work with abstract class
                     //SHOULD I USE GET INSTANCE??
                 }
@@ -312,6 +316,27 @@ public class DataFrame {
         }*/
     }
 
+    class GroupDF implements Groupby{
+
+    }
+
+    LinkedList<GroupDF> groupby (String[] colnames){ //klasa wew
+        for (String name: colnames){
+            //1. find col of that name
+            //2. find same in col
+            this.get(name).findSame();
+
+
+            //3. remember rows where the appeared
+
+            //4. this rows convert to GroupDF
+
+            //5. add it to linkedlist
+
+
+        }
+        //(????)you have to pass to GroupDF also colnames??
+    }
 
 
 

@@ -10,7 +10,7 @@ public class SparseDataFrame extends DataFrame {
     public SparseDataFrame(String namesArray [], String typesArray [], Value hide){
         super(namesArray,typesArray);
         cols.clear();
-        hidden = hide; //rzutowanie
+        hidden = hide; //rzutowanie (?)
 
         for (int i = 0; i < howManyCols; i++) {
             cols.add(new SparseColumn(namesArray[i], typesArray[i], hide));
